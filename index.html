@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tank War</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      #gameScreen {
+        border: 5px solid blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="gameScreen" width="350" height="350"></canvas>
+    <p id="p1Health">Player1 Health = 10</p>
+    <p id="p2Health">Player2 Health = 10</p>
+
+    <script index="module" src="/src/index.js"></script>
+    <script index="module" src="/src/tank.js"></script>
+    <script index="module" src="/src/inputP1.js"></script>
+    <script index="module" src="/src/inputP2.js"></script>
+    <script index="module" src="/src/bullet.js"></script>
+    <script index="module" src="/src/detectCollision.js"></script>
+    <script index="module" src="/src/gameOver.js"></script>
+
+  </body>
+</html>
