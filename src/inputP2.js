@@ -1,4 +1,4 @@
-class InputHandlerP2 {
+export default class InputHandlerP2 {
   constructor(tank) {
     document.addEventListener("keydown", event => {
       switch (event.keyCode) {

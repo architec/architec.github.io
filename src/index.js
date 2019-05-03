@@ -1,9 +1,13 @@
+import Tank from "/src/tank";
+import InputHandlerP1 from "/src/inputP1";
+import InputHandlerP2 from "/src/inputP2";
+import { gameOver } from "/src/gameOver";
 
 let canvas = document.getElementById("gameScreen");
 let ctx = canvas.getContext("2d");
 
-const CANVAS_WIDTH = 350;
-const CANVAS_HEIGHT = 350;
+export const CANVAS_WIDTH = 350;
+export const CANVAS_HEIGHT = 350;
 
 let objects = [];
 
@@ -49,3 +53,5 @@ function gameLoop(timestamp) {
   requestAnimationFrame(gameLoop);
 }
 requestAnimationFrame(gameLoop);
+
+export { objects };

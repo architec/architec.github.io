@@ -1,5 +1,6 @@
+import { objects, CANVAS_HEIGHT, CANVAS_WIDTH } from "/src/index";
 
-function gameOver(ctx) {
+export function gameOver(ctx) {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   ctx.fillStyle = "lime";
   if (objects[0].health === 0) {
