@@ -1,5 +1,4 @@
-import { detectCollision } from "/src/detectCollision.js";
-export default class Bullet {
+class Bullet {
   constructor(faceDir, x, y, player, obs) {
     this.obs = obs;
     this.player = player;

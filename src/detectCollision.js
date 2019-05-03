@@ -1,6 +1,5 @@
-import { objects } from "/src/index";
 
-export function detectCollision(bullet) {
+function detectCollision(bullet) {
   //console.log("detectCollision called");
   let p1Tank = objects[0];
   let p2Tank = objects[1];
@@ -15,7 +14,7 @@ export function detectCollision(bullet) {
       if (bullet.isVisible) {
         bullet.isVisible = false;
         p2Tank.health--;
-        //console.log(p2Tank.health);
+        console.log(p2Tank.health);
         return true;
       }
     }
@@ -30,7 +29,7 @@ export function detectCollision(bullet) {
       if (bullet.isVisible) {
         bullet.isVisible = false;
         p1Tank.health--;
-        //console.log(p1Tank.health);
+        console.log(p1Tank.health);
         return true;
       }
     }

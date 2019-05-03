@@ -1,4 +1,3 @@
-import Bullet from "/src/bullet";
 
 const DIRECTION = {
   UP: "UP",
@@ -7,7 +6,7 @@ const DIRECTION = {
   LEFT: "LEFT"
 };
 
-export default class Tank {
+class Tank {
   constructor(canvasWidth, canvasHeight, obs, player) {
     this.health = 10;
     this.color = "blue";
